@@ -1,6 +1,6 @@
 <template>
-<div class="keycode-card code-canvas">
-    <canvas id="keycode-card-canvas" width="128" height="128">
+<div class="keycode-canvas-card">
+    <canvas id="keycode-canvas" width="128" height="128">
         Your browser does not support the HTML5 canvas tag.
     </canvas>
     <span v-bind:class="{'dummy' : draw}"></span>
@@ -9,14 +9,14 @@
 
 <script>
 export default {
-    name : 'Codecanvas',
+    name : 'CodeCanvas',
     props:{
         code : Number
     },
     computed : {
         draw() {
             const content = this.code;
-            let canvas =  document.getElementById('keycode-card-canvas');
+            let canvas =  document.getElementById('keycode-canvas');
             if(canvas){
                 
                 const context = canvas.getContext('2d');
@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style>
-.keycode-card.initials-state{
-    display: none;
+.keycode-canvas-card{
+    height: 100px;
 }
 </style>
