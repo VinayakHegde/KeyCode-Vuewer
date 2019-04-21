@@ -1,4 +1,7 @@
 # keycode-vuewer
+[Visit Demo page](https://vinayakhegde.github.io/KeyCode-Vuewer/ "KeyCode Vuewer")
+
+Clone the repository and run the following command to to install dependencies.
 
 ## Project setup
 ```
@@ -24,6 +27,3 @@ npm run test
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
